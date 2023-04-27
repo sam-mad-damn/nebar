@@ -1,0 +1,262 @@
+body {
+  font-family: "Century gothic";
+  text-transform: uppercase;
+  background-color: #ffffff;
+  max-height: 100%;
+}
+
+/* навигация */
+/* #region */
+.nav {
+  position: sticky;
+  background-image: url(/upload/backNav.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.num {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-link {
+  color: #494949;
+}
+.nav-link:focus {
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid #e86f5f;
+}
+.nav-link:hover {
+  color: white;
+  border-bottom: 1px solid #e86f5f;
+}
+
+/* #endregion */
+
+.cardss {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 45;
+  background-color: #494949;
+}
+
+.main__book {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 175px;
+  color: rgb(255, 255, 255);
+  top: 180px;
+  background-color: #e86f5f;
+}
+
+.main__book:hover {
+  color: #f1f1f1;
+  background-color: #53c1bb;
+}
+
+.site {
+  position: relative;
+  align-items: center;
+  color: #494949;
+}
+
+.card {
+  display: flex;
+  min-width: 150px;
+  max-width: 300px;
+  justify-content: start;
+  align-items: center;
+  color: rgb(0, 0, 0);
+  border: 0px;
+  margin-right: 0px;
+}
+
+.cardBook {
+  justify-self: center;
+  justify-items: center;
+  margin: 0px;
+}
+
+.drink > * {
+  color: rgb(12, 12, 12);
+}
+
+.strong {
+  color: rgb(255, 255, 255);
+}
+.sunraise {
+  width: 20%;
+  height: 20%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  background-color: #494949;
+}
+
+.btnGl {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+}
+
+.btnBook,
+.btnMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.btnBook {
+  min-width: 290px;
+  min-height: 280px;
+  background-image: url(/upload/backBook.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.btnMenu {
+  min-width: 290px;
+  min-height: 280px;
+  background-image: url(/upload/backMenu.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.sign {
+  max-width: 600px;
+}
+
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+iframe {
+  width: 600px;
+  height: 380px;
+  background: linear-gradient(180deg, #e86f5f 0%, #47cfc8 100%);
+  border-radius: 50%/10%;
+  position: relative;
+  padding: 15px;
+}
+
+iframe:before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  right: -5%;
+  left: -5%;
+  background: inherit;
+  border-radius: 5%/50%;
+}
+
+.footerBook {
+  min-width: 200px;
+  min-height: 68px;
+  padding: 0;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: black;
+  background-image: url(/upload/backBookFooter.png);
+}
+
+footer {
+  height: auto;
+  bottom: 0;
+  flex: 0 0 auto;
+  width: 100%;
+  background-color: #47cfc8;
+  color: #494949;
+}
+
+.prd {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  /* background-color: #494949; */
+  margin: auto;
+  align-items: center;
+  padding: 30px;
+  color: #f1f1f1;
+  border-radius: 10px;
+}
+
+.prd > img{
+  width: 120px;
+  height: 150px;
+}
+
+.w {grid-area: w; background-color: #e86f5f;}
+.e {grid-area: e; background-color: #494949;  padding: 40px 20px;}
+.r {grid-area: r; background-color: #47cfc8;}
+.t {grid-area: t; background-color: #e86f5f;}
+.q {grid-area: q;}
+
+.prds {
+  display: grid;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #494949;
+  margin: auto;
+  align-items: center;
+  padding: 5px 30px 4px 30px;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.prds > * {
+  padding: 5px;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+  list-style: none;
+ 
+}
+.productCard {
+  display: grid;
+  justify-content: center;
+  gap: 30px;
+  grid-template:
+    " . . q . w w . e e . ."
+    " . . q . r r . t t . .";
+}
+
+.text {
+  margin: auto;
+  color: #494949;
+}
+
+h3 {
+  color: #494949;
+}

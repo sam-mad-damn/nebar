@@ -1,0 +1,119 @@
+body {
+  font-family: "Century gothic";
+  text-transform: uppercase;
+  background-color: rgb(255, 255, 255);
+  min-height: 100%;
+}
+
+.container {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 80vh;
+  bottom: 150px;
+}
+.nav {
+  position: sticky;
+  background-image: url(/upload/backNav.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.num {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-link {
+  color: #494949;
+}
+.nav-link:focus {
+  color: white;
+  border-bottom: 1px solid #e86f5f;
+}
+.nav-link:hover {
+  color: white;
+  border-bottom: 2px solid #e86f5f;
+}
+
+/* .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+} */
+
+.footerBook {
+  min-width: 200px;
+  min-height: 68px;
+  padding: 0;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: black;
+  background-image: url(/upload/backBookFooter.png);
+}
+
+footer {
+  height: auto;
+  bottom: 0;
+  width: 100%;
+  background-color: #47cfc8;
+  color: #494949;
+}
+a{
+  text-decoration: none;
+  list-style: none;
+}
+
+.arrange,
+.auth,
+.create {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+
+.profileCont {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #494949;
+}
+
+.profileInfo {
+  flex-direction: row;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 25px;
+}
+
+.updtProf{
+  padding-left:350px;
+}
+
+.shapka {
+  background-color: #494949;
+  color: white;
+}
+
+.button {
+  color: white;
+  background-color: #e86f5f;
+}
+
+.button:hover {
+  background-color: #494949;
+  color: white;
+}
